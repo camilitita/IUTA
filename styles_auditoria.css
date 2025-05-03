@@ -1,0 +1,77 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #131313;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #131313;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(140, 67, 228, 0.5);
+}
+
+h1 {
+  text-align: center;
+  background-color: #8c43e4;
+  background-image: linear-gradient(to top, #6013be 0%, #b37ff3 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+h2 {
+  background-color: #889cff;
+  text-align: center;
+  background-size: 100%;
+  background-image: linear-gradient(to right, #BFBFFF 0%, #A3A3FF 0%, #7879FF 21%, #2121cdb6 52%, #3535f566 78%, #7272e7 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #8c43e4;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #131313;
+  color: #8c43e4;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.registro_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8c43e4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.registro_btn:hover {
+  background-color: #fff;
+  color: #8c43e4;
+}

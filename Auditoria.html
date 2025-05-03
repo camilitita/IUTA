@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditoría Informática - TechSolutions S.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kumbh+Sans:wght@100..900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_auditoria.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5462452ea8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+  <div class="container">
+    <h1>Auditoría Informática - TechSolutions S.A.</h1>
+    <h2>Sistema - Microsoft Dynamics 365</h2>
+    <a href="Register.html" class="registro_btn">Registro</a>
+    <table>
+        <thead>
+          <tr>
+            <th>Usuarios</th>
+            <th>Hardware</th>
+            <th>Tiempo</th>
+            <th>Pruebas</th>
+            <th>Planes</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Admin. del Sistema: 1<br>Dep. de Ventas: 5<br>Dep. de Finanzas: 3<br>Almacén e Inventario: 2<br>Recursos Humanos: 3</td>
+            <td>Servidor Local: 1<br>PC's: 15<br>Conexión de Red Física<br>Impresoras: 4</td>
+            <td>Se planifica que la auditoría se lleve a cabo en un plazo de 1 mes y una semana. Desde el 4 de abril hasta el 11 de mayo, teniendo previsto un espacio de una semana extra (del 4 al 11 de mayo) para el manejo de posibles de imprevistos o pruebas adicionales.</td>
+            <td>Revisión de la documentación existente: manuales de usuario, políticas de seguridad, diagramas de la red.<br>Observación del flujo de trabajo general en los departamentos de ventas y finanzas.<br>Realización de entrevistas iniciales con usuarios clave para comprender sus roles y responsabilidades en el sistema.<br>Observación detallada de los procesos de gestión de datos en el departamento de recursos humanos y almacén/inventario.</td>
+            <td>Semana 1: Observación y Pruebas de Consentimiento (Reunión con jefes de departamento, entrevistas iniciales, recopilación de documentos)<br>Semana 2: Pruebas de Control Interno (Pruebas de controles y segregación de usuarios, Identificación de debilidades)<br>Semana 3: Pruebas de Control de Usuario (Revisión lista de usuarios, privilegios, Identificación de cuentas inactivas)<br>Semana 4: Pruebas Sustantivas (Validación de la Integridad de los datos, Pruebas de procesos de gestión de Inventario y de Conciliación)<br>Semana 5: Elaboración de Informe Final y Recomendaciones<br>Semana 6: Semana de Contingencia</td>
+            <td>PC's con Windows 7 en áreas clave como el departamento de Finanzas<br>Servidor local con bajo mantenimiento y sin actualizaciones frecuentes<br>Los Registros de Auditoría muestran que el administrador no revisa periódicamente los accesos de usuario, lo que podría permitir el acceso no autorizado a información sensible</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <h1>Cuadro 2</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Características Generales</th>
+          <th>Soporte</th>
+          <th>Compatibilidad</th>
+          <th>B.D</th>
+          <th>Registros</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>En su diseño presenta una interfaz de usuario moderna y adaptable, intuitiva y fácil de usar en diversos dispositivos. Su diseño modular permite a las empresas implementar solo las aplicaciones y funcionalidades que necesitan.<br>Está desarrollado utilizando una combinación de lenguajes de programación, incluyendo C#, JavaScript y SQL.<br>Dynamics 365 es principalmente una solución basada en la nube, lo que permite el acceso desde cualquier lugar con conexión a Internet. También ofrece opciones de implementación local (on-premises) e híbridas para empresas con requisitos específicos.</td>
+            <td>Microsoft ofrece diversos niveles de soporte para Dynamics 365, que varían según el plan de suscripción.<br>El soporte incluye asistencia técnica, actualizaciones de software, correcciones de errores y acceso a recursos en línea.<br>Además, existe una amplia red de partners de Microsoft que brindan servicios de implementación, personalización y soporte.</td>
+            <td>Dynamics 365 se integra de forma nativa con otros productos de Microsoft, como Microsoft 365 (Office 365), Power BI y Azure.<br>También ofrece compatibilidad con diversas aplicaciones y servicios de terceros a través de API y conectores.</td>
+            <td>Utiliza Microsoft Dataverse como su base de datos principal. Es una plataforma de datos segura y escalable que permite almacenar y administrar datos de forma eficiente y que utiliza Azure SQL.</td>
+            <td>Permite crear y administrar una amplia variedad de registros, incluyendo Clientes, Contactos, Productos, Pedidos, Facturas y Actividades.<br>La cantidad de registros que se pueden crear depende del plan de suscripción y la capacidad de almacenamiento disponible.</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Reportes</th>
+          <th>Seguridad</th>
+          <th>Comportamiento</th>
+          <th>Observaciones</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>Dynamics 365 ofrece una amplia gama de capacidades de informes y análisis, incluyendo: Reportes predefinidos para diversas áreas de negocio (Operacionales, Analíticos, Paneles de Control). Reportes personalizados. Integración con Power BI para análisis avanzados y visualización de datos. La cantidad de reportes es muy amplia, y depende de las aplicaciones de Dynamics 365 que se estén utilizando.</td>
+            <td>Implementa rigurosas medidas de seguridad para proteger los datos y el acceso al sistema, incluyendo: Autenticación de usuarios y control de acceso basado en roles.<br>Cifrado de datos en tránsito y en reposo. Auditoría de actividades y registros de acceso.<br>Protección contra amenazas cibernéticas. Microsoft Azure, donde reside la información, posee altos estándares de seguridad.</td>
+            <td>Entrada: Permite la entrada de datos a través de diversos canales, incluyendo formularios web, importación de archivos y API. También se integra con otras aplicaciones y servicios para la captura automática de datos.<br>Salida: Dynamics 365 permite la generación de reportes, paneles y exportación de datos en diversos formatos (Excel, PDF, etc.). También se integra con otras aplicaciones y servicios para la distribución y el intercambio de datos.</td>
+            <td>La amplia gama de funcionalidades y opciones de personalización puede hacer que sea complejo de implementar y utilizar, especialmente para usuarios nuevos.<br>La implementación y el mantenimiento de este sistema pueden ser costosos, especialmente para pequeñas y medianas empresas.<br>Al ser una solución basada en la nube, Dynamics 365 depende enormemente de una conexión a Internet estable.<br>La generación de informes puede llegar a ser limitada, y la personalización de los mismos, puede ser compleja.</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+  
+</body>
+</html>

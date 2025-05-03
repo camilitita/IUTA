@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="styles_register.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kumbh+Sans:wght@100..900&family=VT323&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5462452ea8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>Registro</header>
+
+    <form action="#">
+      <div class="form_one">
+        <div class="details_personal">
+          <span class="title">Detalles Personales</span>
+
+          <div class="fields">
+            <div class="input_field">
+              <label>Nombre Completo</label>
+              <input type="text" placeholder="Nombre" required>
+            </div>
+            <div class="input_field">
+              <label>Fecha de Nacimiento</label>
+              <input type="date" placeholder="" required>
+            </div>
+            <div class="input_field">
+              <label>Email</label>
+              <input type="text" placeholder="example@hotmail.com">
+            </div>
+
+            <div class="input_field">
+              <label>Número de Teléfono</label>
+              <input type="tel" placeholder="Introduzca su número" required>
+            </div>
+            <div class="input_field">
+              <label>Género</label>
+              <select required>
+                <option value="" disabled selected>Introduzca su género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+                <option value="no_especificado">Prefiero no especificar</option>
+              </select>
+            </div>
+            <div class="input_field">
+              <label>Dirección</label>
+              <input type="text" placeholder="Introduzca su dirección">
+            </div>
+          </div>
+
+          <span class="title">Detalles Laborales</span>
+
+          <div class="fields">
+            <div class="input_field">
+              <label>Cargo</label>
+              <input type="text" placeholder="Introduzca su cargo" required>
+            </div>
+            <div class="input_field">
+              <label>Departamento</label>
+              <select required>
+                <option value="" disabled selected>Introduzca su departamento</option>
+                <option value="ventas">Ventas</option>
+                <option value="finanzas">Finanzas</option>
+                <option value="rrhh">Recursos Humanos</option>
+                <option value="almacen">Almacén/Inventario</option>
+              </select>
+            </div>
+            <div class="input_field">
+              <label>Antigüedad Laboral</label>
+              <select required>
+                <option value="" disabled selected>¿Cuánto tiempo lleva con nosotros?</option>
+                <option value="0-6"> 0-6 meses </option>
+                <option value="1"> 1 año </option>
+                <option value="2"> 2 años </option>
+                <option value="3"> 3 años </option>
+                <option value="4"> 4 años </option>
+                <option value="5+"> 5 años o más </option>
+              </select>
+            </div>
+
+          <button class="next_btn">
+            <span class="btn_text">Siguiente</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        </div>
+      </div>
+
+      <div class="form_two">
+        <div class="work_details">
+          <span class="title">Cuestionario General</span>
+
+          <div class="fields">
+            <div class="input_field">
+              <label>¿Qué tan eficiente se siente al utilizar Microsoft Dynamics?</label>
+              <select required>
+                <option value="" disabled selected>Introduzca su respuesta</option>
+                <option value="0-6"> Nada eficiente</option>
+                <option value="1"> Poco eficiente</option>
+                <option value="2"> Moderadamente eficiente </option>
+                <option value="3"> Muy eficiente </option>
+              </select>
+            </div>
+            <div class="input_field">
+              <label>¿Qué funciones específicas de Microsoft Dynamics utiliza con mayor frecuencia?</label>
+              <input type="text" placeholder="Introduzca su respuesta">
+            </div>
+            <div class="input_field">
+              <label>¿Qué tan rápido se resuelven sus problemas y preguntas relacionadas con Microsoft Dynamics?</label>
+              <select required>
+                <option value="" disabled selected>Introduzca su respuesta</option>
+                <option value="1">Lento</option>
+                <option value="2">Moderado</option>
+                <option value="3">Rápidamente</option>
+              </select>
+            </div>
+
+            <div class="input_field">
+              <label>¿Siente que ha recibido capacitación adecuada sobre el uso de Microsoft Dynamics?</label>
+              <select required>
+                <option value="" disabled selected>Introduzca su respuesta</option>
+                <option value="1">Sí</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+            <div class="input_field">
+              <label>¿Qué desafíos ha enfrentado al utilizar Microsoft Dynamics?</label>
+              <textarea name="descripcion" rows="4" cols="50"></textarea>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <div class="back_btn">
+              <i class="fa-solid fa-arrow-right"></i>
+              <span class="btn_text">Anterior</span>
+            </div>
+            <button class="submit_btn"> <span class="btn_text">Enviar</span>
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
