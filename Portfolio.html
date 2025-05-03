@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Estudiantil</title>
+  <link rel="stylesheet" href="styles_portfolio.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kumbh+Sans:wght@100..900&family=VT323&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5462452ea8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+  <div class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Mi Portafolio Académico</h1>
+      <h2 class="hero-tagline"><span class="typed-text"></span></h2> <p class="hero-intro">Un espacio dedicado a los proyectos que más destaco de mi viaje académico</p>
+      <button class="hero-button">Ver mis Proyectos</button>
+    </div>
+    <div class="hero-image">
+      <img src="images/brunette-woman-sitting-by-table.jpg" alt="Hero Image">
+    </div>
+  </div>
+
+  <div class="projects">
+    <h2 class="projects-title">Mis Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/5288915_2765704.jpg" alt="Project 1">
+        <h3 class="project-title">Formularios en PHP</h3>
+        <p class="project-description">Serie de Formularios funcionales conectados a una Base de Datos, utilizando PHP y MySQL</p>
+        <a href="project1.html" class="project-button">Leer Más</a>
+      </div>
+  
+      </div>
+  </div>
+
+  <div class="projects">
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="./images/ecommerce.png" alt="Project 1">
+        <h3 class="project-title">Ecommerce</h3>
+        <p class="project-description">Diseño y Desarrollo de un ecommerce orientado a la venta de víveres</p>
+        <a href="project1.html" class="project-button">Leer Más</a>
+      </div>
+  
+      </div>
+  </div>
+
+  <div class="projects">
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="./images/how-to-manage-blog-1.jpg" alt="Project 1">
+        <h3 class="project-title">Blog Website</h3>
+        <p class="project-description">Plataforma de estilo Blog diseñada con contenido informativo y útil para la búsqueda de hospedaje en nuestra área</p>
+        <a href="project1.html" class="project-button">Leer Más</a>
+      </div>
+  
+      </div>
+  </div>
+
+  <div class="about-me">
+    <img src="./images/WhatsApp Image 2025-05-01 at 5.13.45 PM.jpeg" alt="Your Photo" class="about-me-photo">
+    <div class="about-me-text">
+      <h2>Sobre Mi</h2>
+      <p>Fanática del UX/UI con nada de experiencia pero muchas ganas</p>
+      <p>20 años</p>
+      <P>Estudiante de TSU en Informática</P>
+      <div class="about-me-contact">
+        <a href="mailto:camicas0118@gmail.com">camicas0118@gmail.com</a> | <a href="https://www.instagram.com/___cramberry/?hl=en">Instagram</a>
+      </div>
+      <a href="your-resume.pdf" class="about-me-resume">Descarga mi CV</a>
+    </div>
+  </div>
+</body>
+</html>
